@@ -1,7 +1,9 @@
 export default function Footer() {
   return (
-    <footer className="mt-12 border-t py-6 text-center text-gray-500 text-sm">
-      © 2024 ModernBlog. Crafted with passion for great content.
+    <footer className="border-t border-gray-200">
+      <div className="max-w-screen-xl mx-auto px-4 py-6 text-center text-sm text-gray-500">
+        © 2025 ModernBlog. Crafted with passion for great content.
+      </div>
     </footer>
   );
 }

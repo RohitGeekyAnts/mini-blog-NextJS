@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Subtle typographic polish */
+:root {
+  --brand: 37 99% 53%; /* ~ Tailwind blue-600 in HSL */
+}
+html,
+body {
+  @apply bg-white text-gray-900;
+}
+h1,
+h2,
+h3 {
+  @apply tracking-tight;
+}
+p {
+  @apply leading-7;
+}

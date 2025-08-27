@@ -1,40 +1,69 @@
 const posts = [
   {
-    id: "1",
+    id: "the-future-of-modern-web-development",
     title: "The Future of Modern Web Development",
-    description:
-      "Exploring trends shaping the web development landscape in 2024.",
     author: "Alex Thompson",
-    date: "Dec 15, 2024",
     readTime: "5 min read",
-    content: `
-Web development continues to evolve rapidly.
-In 2024, key trends include SSR, edge computing, AI tools, and micro-frontends.
-Developers must stay adaptable and continue learning.
-    `,
+    date: "December 15, 2024",
+    excerpt:
+      "Exploring the latest trends and technologies shaping the web development landscape in 2024.",
+    sections: {
+      introduction:
+        "Web development continues to evolve at a rapid pace. From new frameworks to revolutionary development paradigms, the landscape is constantly shifting.",
+      trends: [
+        "Server-side rendering making a comeback",
+        "Edge computing becoming mainstream",
+        "AI-powered development tools",
+        "Micro-frontends architecture",
+      ],
+      roadAhead:
+        "As we look to the future, developers must stay adaptable and continue learning. The technologies we use today might be obsolete tomorrow, but the fundamentals of good software engineering remain constant.",
+    },
+    avatar: "🧑‍💻",
   },
   {
-    id: "2",
+    id: "building-scalable-design-systems",
     title: "Building Scalable Design Systems",
-    description: "Guide to creating and maintaining design systems.",
     author: "Sarah Chen",
-    date: "Dec 12, 2024",
     readTime: "7 min read",
-    content: `
-Creating scalable design systems is key for teams.
-This article explores structure, guidelines, and scalability best practices.
-    `,
+    date: "December 12, 2024",
+    excerpt:
+      "A comprehensive guide to creating and maintaining design systems that grow with your team.",
+    sections: {
+      introduction:
+        "Web development continues to evolve at a rapid pace. From new frameworks to revolutionary development paradigms, the landscape is constantly shifting.",
+      trends: [
+        "Server-side rendering making a comeback",
+        "Edge computing becoming mainstream",
+        "AI-powered development tools",
+        "Micro-frontends architecture",
+      ],
+      roadAhead:
+        "As we look to the future, developers must stay adaptable and continue learning. The technologies we use today might be obsolete tomorrow, but the fundamentals of good software engineering remain constant.",
+    },
+    avatar: "👩‍🎨",
   },
   {
-    id: "3",
-    title: "TypeScript Best Practices",
-    description: "How to use TypeScript effectively in large-scale apps.",
+    id: "typescript-best-practices-for-large-applications",
+    title: "TypeScript Best Practices for Large Applications",
     author: "Mike Rodriguez",
-    date: "Dec 8, 2024",
     readTime: "6 min read",
-    content: `
-Learn proven strategies for using TypeScript effectively in large-scale projects.
-    `,
+    date: "December 8, 2024",
+    excerpt:
+      "Learn how to leverage TypeScript effectively in large-scale applications with these proven strategies.",
+    sections: {
+      introduction:
+        "Web development continues to evolve at a rapid pace. From new frameworks to revolutionary development paradigms, the landscape is constantly shifting.",
+      trends: [
+        "Server-side rendering making a comeback",
+        "Edge computing becoming mainstream",
+        "AI-powered development tools",
+        "Micro-frontends architecture",
+      ],
+      roadAhead:
+        "As we look to the future, developers must stay adaptable and continue learning. The technologies we use today might be obsolete tomorrow, but the fundamentals of good software engineering remain constant.",
+    },
+    avatar: "👨‍💻",
   },
 ];
 

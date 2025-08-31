@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { ArrowRight, Book, Users, Sparkles } from "../components/Icons";
+import { ArrowRight } from "../components/Icons";
+import whyReadData from "../data/whyReadData";
 
 export default function HomePage() {
   return (
@@ -34,37 +35,23 @@ export default function HomePage() {
         </p>
 
         <div className="mt-12 grid gap-6 grid-cols-[repeat(auto-fit,minmax(320px,1fr))] text-center justify-items-center">
-          <div className=" justify-items-center  rounded-2xl bg-white p-4 shadow-sm hover:shadow-md transition">
-            <span className="flex h-14 w-14 items-center justify-center rounded-full bg-indigo-100 mb-4">
-              <Book className="h-8 w-8 text-indigo-600" />
-            </span>
-            <h3 className="font-semibold">In-Depth Articles</h3>
-            <p className="mt-4 text-md text-gray-600">
-              Comprehensive guides and tutorials that go beyond the surface
-              level.
-            </p>
-          </div>
-
-          <div className=" justify-items-center  rounded-2xl bg-white p-4 shadow-sm hover:shadow-md transition">
-            <span className="flex h-14 w-14 items-center justify-center rounded-full bg-indigo-100 mb-4">
-              <Users className="h-8 w-8 text-indigo-600" />
-            </span>
-            <h3 className="font-semibold">Expert Authors</h3>
-            <p className="mt-4 text-md text-gray-600">
-              Content written by experienced developers and industry
-              professionals.
-            </p>
-          </div>
-
-          <div className=" justify-items-center  rounded-2xl bg-white p-4 shadow-sm hover:shadow-md transition">
-            <span className="flex h-14 w-14 items-center justify-center rounded-full bg-indigo-100 mb-4">
-              <Sparkles className="h-8 w-8 text-indigo-600" />
-            </span>
-            <h3 className="font-semibold">Latest Trends</h3>
-            <p className="mt-4 text-md text-gray-600">
-              Stay up-to-date with the newest technologies and best practices.
-            </p>
-          </div>
+          {whyReadData?.map((feature) => {
+            const Icon = feature.icon;
+            return (
+              <div
+                key={feature.id}
+                className="justify-items-center rounded-2xl bg-white p-4 shadow-sm hover:shadow-md transition"
+              >
+                <span className="flex h-14 w-14 items-center justify-center rounded-full bg-indigo-100 mb-4">
+                  <Icon className="h-8 w-8 text-indigo-600" />
+                </span>
+                <h3 className="font-semibold">{feature.title}</h3>
+                <p className="mt-4 text-md text-gray-600">
+                  {feature.description}
+                </p>
+              </div>
+            );
+          })}
         </div>
       </section>
     </>

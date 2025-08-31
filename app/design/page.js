@@ -24,23 +24,23 @@ const features = [
 
 export default function DesignPage() {
   return (
-    <section className="max-w-screen-xl mx-auto px-4 py-12">
+    <section className="max-w-screen-2xl mx-auto px-4 md:px-16 py-12">
       <header className="text-center mb-10">
         <h1 className="text-4xl font-bold">Design Insights</h1>
-        <p className="mt-3 text-gray-600 max-w-2xl mx-auto">
+        <p className="mt-3 text-gray-600 max-w-lg mx-auto">
           Ideas, principles, and inspiration for modern design.
         </p>
       </header>
 
-      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 text-center justify-items-center">
+      <div className="grid gap-6 grid-cols-[repeat(auto-fit,minmax(320px,1fr))] text-center justify-items-center">
         {features.map((feature) => {
           const Icon = feature.icon;
           return (
             <article
               key={feature.id}
-              className="rounded-2xl border border-gray-200 bg-white p-6 "
+              className="rounded-2xl bg-white p-6 shadow-sm hover:shadow-md transition"
             >
-              <div className=" justify-items-center max-w-[300px] rounded-2xl bg-white p-4 ">
+              <div className=" justify-items-center rounded-2xl bg-white p-4">
                 <span className="flex h-14 w-14 items-center justify-center rounded-full bg-indigo-100 mb-4">
                   <Icon className="h-8 w-8 text-indigo-600">
                     {features.icon}

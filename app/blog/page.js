@@ -4,20 +4,20 @@ import { User, Clock, ArrowRight } from "../../components/Icons";
 
 export default function BlogPage() {
   return (
-    <section className="max-w-screen-xl mx-auto px-4 py-12">
+    <section className="max-w-screen-2xl mx-auto px-4 md:px-16 py-12">
       <header className="text-center mb-10">
         <h1 className="text-4xl font-bold">Latest Articles</h1>
-        <p className="mt-3 text-gray-600 max-w-2xl mx-auto">
+        <p className="mt-3 text-gray-600 max-w-lg mx-auto">
           Insights, tutorials, and thoughts on modern web development and
           technology.
         </p>
       </header>
 
-      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 ">
+      <div className="grid gap-6 grid-cols-[repeat(auto-fit,minmax(320px,1fr))] justify-items-center">
         {posts.map((post) => (
           <article
             key={post.id}
-            className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm hover:shadow-md transition"
+            className="rounded-2xl bg-white p-6 shadow-sm hover:shadow-md transition "
           >
             <div className="flex items-center gap-4 text-xs text-gray-500">
               <span className="inline-flex items-center gap-1">
@@ -45,7 +45,7 @@ export default function BlogPage() {
               <span>{post.date}</span>
               <Link
                 href={`/blog/${post.id}`}
-                className="inline-flex items-center gap-1 font-medium hover:underline"
+                className="inline-flex items-center gap-1 font-medium hover:underline text-gray-700"
               >
                 Read More <ArrowRight className="h-4 w-4" />
               </Link>

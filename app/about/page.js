@@ -1,8 +1,8 @@
 "use client";
 export default function AboutPage() {
   return (
-    <section className="max-w-screen-xl mx-auto px-4 py-12">
-      <div className="mx-auto max-w-lg rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
+    <section className="max-w-screen-xl mx-auto px-4 md:px-16 py-12">
+      <div className="mx-auto max-w-lg rounded-2xl  bg-white p-6 shadow-sm">
         <div className="flex items-center gap-4">
           <div className="h-12 w-12 grid place-items-center text-2xl rounded-full bg-orange-100">
             🧑‍💻

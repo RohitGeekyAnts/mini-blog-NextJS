@@ -1,55 +1,3 @@
-// import Link from "next/link";
-
-// export default function HomePage() {
-//   return (
-//     <div>
-//       {/* Hero Section */}
-//       <section className="bg-gray-100 text-center py-20">
-//         <h1 className="text-4xl font-bold mb-4">Welcome to ModernBlog</h1>
-//         <p className="text-lg mb-6 text-gray-600">
-//           Discover insights, tutorials, and stories about modern web
-//           development.
-//         </p>
-//         <Link
-//           href="/blog"
-//           className="bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700"
-//         >
-//           Explore Articles →
-//         </Link>
-//       </section>
-
-//       {/* Why Read Section */}
-//       <section className="max-w-5xl mx-auto text-center py-16 px-4">
-//         <h2 className="text-2xl font-bold mb-6">Why Read Our Blog?</h2>
-//         <p className="text-gray-600 mb-10">
-//           We're passionate about sharing knowledge and helping developers grow.
-//         </p>
-
-//         <div className="grid md:grid-cols-3 gap-8">
-//           <div className="p-6 rounded-2xl shadow hover:shadow-lg">
-//             <h3 className="font-semibold mb-2">In-Depth Articles</h3>
-//             <p className="text-sm text-gray-600">
-//               Guides and tutorials that go beyond the surface level.
-//             </p>
-//           </div>
-//           <div className="p-6 rounded-2xl shadow hover:shadow-lg">
-//             <h3 className="font-semibold mb-2">Expert Authors</h3>
-//             <p className="text-sm text-gray-600">
-//               Written by experienced developers and professionals.
-//             </p>
-//           </div>
-//           <div className="p-6 rounded-2xl shadow hover:shadow-lg">
-//             <h3 className="font-semibold mb-2">Latest Trends</h3>
-//             <p className="text-sm text-gray-600">
-//               Stay updated with new technologies and best practices.
-//             </p>
-//           </div>
-//         </div>
-//       </section>
-//     </div>
-//   );
-// }
-
 import Link from "next/link";
 import { ArrowRight, Book, Users, Sparkles } from "../components/Icons";
 
@@ -77,16 +25,16 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Why Read */}
-      <section className="max-w-screen-2xl mx-auto px-4 py-16">
+      {/* Why Read Our Blog*/}
+      <section className="max-w-screen-2xl mx-auto px-4 md:px-16 py-16">
         <h2 className="text-3xl font-bold text-center">Why Read Our Blog?</h2>
-        <p className="mt-3 text-center text-gray-600 max-w-2xl mx-auto">
+        <p className="mt-3 text-center text-gray-600 max-w-lg mx-auto">
           We're passionate about sharing knowledge and helping developers grow
           their skills.
         </p>
 
-        <div className="mt-12 grid gap-6 sm:grid-cols-3 text-center justify-items-center">
-          <div className=" justify-items-center max-w-[300px] rounded-2xl bg-white p-4 shadow-sm hover:shadow-md transition">
+        <div className="mt-12 grid gap-6 grid-cols-[repeat(auto-fit,minmax(320px,1fr))] text-center justify-items-center">
+          <div className=" justify-items-center  rounded-2xl bg-white p-4 shadow-sm hover:shadow-md transition">
             <span className="flex h-14 w-14 items-center justify-center rounded-full bg-indigo-100 mb-4">
               <Book className="h-8 w-8 text-indigo-600" />
             </span>
@@ -97,7 +45,7 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className=" justify-items-center max-w-[300px] rounded-2xl bg-white p-4 shadow-sm hover:shadow-md transition">
+          <div className=" justify-items-center  rounded-2xl bg-white p-4 shadow-sm hover:shadow-md transition">
             <span className="flex h-14 w-14 items-center justify-center rounded-full bg-indigo-100 mb-4">
               <Users className="h-8 w-8 text-indigo-600" />
             </span>
@@ -108,7 +56,7 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className=" justify-items-center max-w-[300px] rounded-2xl bg-white p-4 shadow-sm hover:shadow-md transition">
+          <div className=" justify-items-center  rounded-2xl bg-white p-4 shadow-sm hover:shadow-md transition">
             <span className="flex h-14 w-14 items-center justify-center rounded-full bg-indigo-100 mb-4">
               <Sparkles className="h-8 w-8 text-indigo-600" />
             </span>
